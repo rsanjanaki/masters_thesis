@@ -38,3 +38,32 @@ RAG documents/
 # ── Misc ──────────────────────────────────────────────────────────────────────
 *.log
 *.tmp
+
+# ── Data files (never commit raw or processed datasets) ─────────────────────
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# ── Trained model weights & FAISS indices ───────────────────────────────────
+notebooks/ML/models/
+notebooks/ML/datasets/
+notebooks/ML/reports/
+notebooks/ML/ML_Fraud_Detection_1_outputs/
+notebooks/ML/ML_Fraud_Detection_2_outputs/
+notebooks/LLMs/outputs/vector_db/
+notebooks/LLMs/outputs/reports/
+*.joblib
+*.pkl
+*.cbm
+
+# ── API keys ──────────────────────────────────────────────────────────────────
+.env
+*.env
+ATT18160.env
+
+# ── Notebook checkpoints ──────────────────────────────────────────────────────
+**/.ipynb_checkpoints/
